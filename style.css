@@ -32,6 +32,9 @@ section{
     text-align: left;
 }
 
+#logo span{
+    color: goldenrod;
+}
 .block-de-droite{
     display: grid;
     grid-template-rows: repeat(3, 1fr);
@@ -45,9 +48,6 @@ section{
     height: 35px;
     background: #DCDCDC;
     padding: 5px;
-    /* position: absolute;
-    right: 20%;
-    top: 20%; */
 }
 
 .compte img{
@@ -82,4 +82,105 @@ header nav a{
 .deconnection{
 	border-right: 1px solid;
     border-image: linear-gradient(to top, #DCDCDC, white) 1;
+}
+
+
+/* CONTAINER */
+
+.container{
+	background: #F4F7FA;
+	width: 50%;
+	margin: auto;
+
+    display: grid;
+    flex-wrap: wrap;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px 20px;
+
+    padding-bottom: 5%;
+}
+
+.header-page-catalogue{
+    grid-column: span 3;
+}
+
+.header-page-catalogue img{
+	width: 100%;
+	height: 300px;
+}
+
+.contenu-page-catalogue{
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    justify-items: center;
+
+}
+
+article{
+	position: relative;
+}
+
+.gant
+{
+    border: 2px solid grey;
+    box-shadow: 0px 20px 20px grey;
+}
+.reduction{
+
+    position: absolute;
+    top: 10px;
+    right: -10px;
+	box-shadow: 0px 0px 15px grey;
+    font-weight: bold;
+
+    color: goldenrod;
+    background-color: black;
+    border-radius: 10%;
+    padding: 8px;
+}
+
+.description{
+	text-align: center;
+	font-weight: bold;
+	margin-top: -30px;
+}
+
+.prix
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.prix a
+{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 50%;
+    padding-top: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.prix p {
+    font-size: 25px;
+    margin-top: 0;
+    border-bottom: 2px solid ;
+    border-image: linear-gradient(to right, white, #DCDCDC) 1;
+}
+
+.prixavant{
+	text-decoration: line-through;
+}
+
+.prixapres
+{
+    color: goldenrod;
+    font-size: 35px !important;
+    margin-left: 20px;
 }
