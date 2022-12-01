@@ -1,0 +1,85 @@
+/* Retirer toutes les espaces intérieur et extérieure des elements par défauts */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(38, 37, 37);
+}
+
+header{
+    background: #F4F7FA;
+    text-align: center;
+    position: relative;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-end;
+
+    width: 50%;
+    margin: auto;
+}
+
+#logo{
+    
+    border-left: solid 1px;
+    padding-left: 3%;
+    border-image: linear-gradient(to top, orange, white) 1;
+    /* border-image: linear-gradient(white, orange) 1; */
+    text-align: left;
+}
+
+.block-de-droite{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: flex-end;
+}
+
+ .compte{
+	display: flex;
+    justify-content: space-around;
+    border: 1px solid;
+    height: 35px;
+    background: #DCDCDC;
+    padding: 5px;
+    /* position: absolute;
+    right: 20%;
+    top: 20%; */
+}
+
+.compte img{
+	width: 30px;
+	height: 30px;
+    padding: 6px;
+}
+
+.moncompte, .panier{
+	display: flex;
+    align-items: center;
+}
+
+.block-de-droite span{
+    text-align: right;
+    padding: 2%;
+    font-weight: bold;
+}
+
+nav {
+    text-align: left;
+}
+
+header nav a{
+    padding: 8% 4% 0;   
+    color: black;
+	text-decoration: none;
+	border-left: 1px solid ;
+    border-image: linear-gradient(to top, #DCDCDC, white) 1;
+}
+
+.deconnection{
+	border-right: 1px solid;
+    border-image: linear-gradient(to top, #DCDCDC, white) 1;
+}
