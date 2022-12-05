@@ -1,0 +1,259 @@
+/* Retirer toutes les espaces intérieur et extérieure des elements par défauts */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	margin: 0;
+    background-color: rgb(38, 37, 37);
+    position: relative;
+}
+
+header{
+    background: #F4F7FA;
+	display: flex;
+	justify-content: center;
+	position: relative;
+    padding: 30px;
+    height: 100px;
+}
+
+#logo{
+    border-left: solid 1px;
+    padding-left: 10px;
+    border-image: linear-gradient(white, orange) 1;
+    position:absolute;
+    bottom: 0;
+    left: 20%;
+}
+
+
+.compte{
+	display: flex;
+    justify-content: space-around;
+    border: 1px solid;
+    height: 35px;
+    width: 25%;
+    background: #DCDCDC;
+    padding: 5px;
+    position: absolute;
+    right: 20%;
+    top: 20%;
+}
+
+.compte img{
+	width: 30px;
+	height: 30px;
+    padding: 6px;
+}
+
+.moncompte, .panier{
+	display: flex;
+    align-items: center;
+}
+
+#julien{
+	position: absolute;
+	top: 60px;
+	right: 0;
+}
+#logo span{
+    color: goldenrod;
+}
+
+nav{
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+}
+
+header nav a {
+	color: black;
+	text-decoration: none;
+	border-left: 2px solid;
+	padding-left: 8px;
+}
+
+.deconnection{
+	border-right: 2px solid;
+	padding-right: 8px;
+}
+/********************FIN PARTI HEADER **********************************/
+
+
+/* CONTAINER */
+
+.container{
+	background: #F4F7FA;
+	width: 60%;
+	margin: auto;
+
+    display: grid;
+    flex-wrap: wrap;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px 20px;
+
+    padding-bottom: 5%;
+}
+
+.header-page-catalogue{
+    grid-column: span 3;
+}
+
+.header-page-catalogue img{
+	width: 100%;
+	height: 300px;
+}
+
+.contenu-page-catalogue{
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    justify-items: center;
+}
+
+article{
+	position: relative;
+}
+
+.gant
+{
+    border: 2px solid grey;
+    box-shadow: 0px 20px 20px grey;
+}
+.reduction{
+
+    position: absolute;
+    top: 10px;
+    right: -10px;
+	box-shadow: 0px 0px 15px grey;
+    font-weight: bold;
+
+    color: goldenrod;
+    background-color: black;
+    border-radius: 10%;
+    padding: 8px;
+}
+
+.description{
+	text-align: center;
+	font-weight: bold;
+	margin-top: -30px;
+}
+
+.prix
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.prix a
+{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    height: 30px;
+    width: 50%;
+    padding-top: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.prix p {
+    font-size: 25px;
+    margin-top: 0;
+    border-bottom: 2px solid ;
+    border-image: linear-gradient(to right, white, #DCDCDC) 1;
+}
+
+.prixavant{
+	text-decoration: line-through;
+}
+
+.prixapres
+{
+    color: goldenrod;
+    font-size: 35px !important;
+    margin-left: 20px;
+}
+
+
+/*********************FOOTER *********************************/
+footer{
+	background: #4F5356;
+	text-align: center;
+}
+.menu {
+    margin: auto;
+    width: 20%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 0 0px 10px 10px;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu span{
+    color: grey;
+    font-size: 3em;
+}
+
+.menu a{
+	text-decoration: none;
+	color: black;
+}
+
+.articlefooter{
+	display: inline-flex;
+    justify-content: space-around;
+    width: 35%;
+    margin: auto;
+    margin-top: 30px;
+    color: white;
+    padding: 15px;
+}
+
+.barre-grise-contenu-et-footer
+{
+    width: 100%;
+    height: 13px;
+    background-color: #4F5356;
+    position: absolute;
+    top: calc(100% - 22.5%);
+
+}
+
+.barre-noire-contenu-et-footer
+{
+    width: 100%;
+    height: 15px;
+    background-color: black;
+
+}
+
+.copyright{
+	color: white;
+
+}
+.traitblanc
+{
+    height: 15px;    
+    margin: auto;
+    background: white;
+    width: 60%;
+    margin-top: -15px;
+}
+
+.socials img{
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+}
+/*************************************************************/
