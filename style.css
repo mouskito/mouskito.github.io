@@ -249,3 +249,95 @@ footer{
     margin: 20px;
 }
 /*************************************************************/
+
+/* Sur écran, quand la largeur de la fenêtre est comprise entre 200px et 350px */
+/* @media screen and (min-width: 200px) and (max-width: 350px)   and (orientation: portrait){ */
+    /* @media screen and (max-width: 380px) { */
+    @media screen and (max-width: 480px) {
+        body{
+            background: #F4F7FA;
+        }
+
+        section{
+            /* margin: 0;
+            width: 100%;
+            align-items: start; */
+
+            display: initial;
+        }
+
+        #logo{
+            width: 50%;
+            float: left;
+        }
+       #logo img{
+        width: 30%;
+       }
+
+       #logo span {
+        display: inline-block;
+        }
+
+       .moncompte p, .panier p{
+        display: none;
+       }
+
+       .block-de-droite{
+        display: initial;
+       }
+
+       nav{
+        display: grid;
+        justify-items: center;
+       }
+
+       nav > a {
+        border: 1px solid green;
+        background-color: lime;
+        width: 100%;
+        text-align: center;
+      }
+
+      .container{
+        display: initial;
+        
+      }
+
+      .contenu-page-catalogue{
+        display: initial;
+      }
+
+      article{
+        width: 85%;
+        margin: 10% auto;
+      }
+
+      article img{
+        width: 100%;
+      }
+
+      .menufooter{
+        padding: 0;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+      }
+      .menufooter span{
+        display: none;
+      }
+
+      .menufooter a {
+        border-bottom: 2px solid;
+        border-image: linear-gradient(to right, white, #DCDCDC) 1;
+      }
+
+      .articlefooter p{
+        display: none;
+        padding: 5%;
+      }
+
+      .barre-grise-contenu-et-footer{
+        display: none;
+      }
+
+    }
